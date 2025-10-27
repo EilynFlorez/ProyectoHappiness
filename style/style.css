@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*Estilos generales*/
+
 * {
     padding: 0px;
     margin: 0px;
@@ -9,10 +11,16 @@
 
 h1, h2 {
     font-family: "bebas neue";
+    font-weight: 500;
 }
 
 p, a, button {
     font-family: "open sans";
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 li {
@@ -21,6 +29,21 @@ li {
 
 a {
     text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos botones */
+.boton-1 {
+    border: none;
+    background-color: rgb(245, 203, 0);
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 1.5% 6%;
 }
 
 /* Estilos del header */
@@ -53,4 +76,42 @@ nav {
     font-size: 1.05rem;
     color: rgb(0, 0, 0);
     font-weight: 800;
+}
+
+/* Estilos sección 1 */
+.seccion-1 {
+    display: flex;
+    width: 100%;
+    min-height: 130vh;
+    padding: 5.5%;
+    gap: 8%;
+}
+
+.sec1-img {
+    width: 50%;
+}
+.sec1-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+    width: 50%;
+    padding-top: 5%;
+    padding-right: 8%;
+}
+
+.sec1-text h1 {
+    font-size: 7rem;
+    line-height: 0.8;
+}
+
+/* Estilos seccion 2 */
+.seccion-2 {
+    display: none;
+}
+
+/* Estilos seccion 3*/ 
+.seccion-3 {
+    width: 100%;
+    min-height: 170vh;
+    background-color: rgb(245, 203, 0);
 }
