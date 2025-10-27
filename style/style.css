@@ -136,7 +136,7 @@ nav {
 .sec3-tit {
     width: 50%;
     font-size: 4.4rem;
-    line-height: 1;
+    line-height: 0.8;
 }
 
 .sec3-contenido {
@@ -151,7 +151,7 @@ nav {
     gap: 8%;
     line-height: 1.2;
     width: 32%;
-    padding-top: 1%;
+    padding-top: 1.6%;
 }
 
 .sec3-img {
@@ -278,4 +278,35 @@ nav {
 
 .sec6-text h2 {
     font-size: 4rem;
+}
+
+/* Estilos seccion 7*/ 
+.seccion-7 {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 8% 3%;
+    padding-left: 6%;
+    align-items: center;
+    gap: 10%;
+    background-color: rgb(230, 230, 230)
+}
+
+.sec7-cont-text {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.sec7-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.sec7-text h2 {
+    font-size: 5.5rem;
+    line-height: 1;
 }
