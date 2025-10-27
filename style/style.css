@@ -243,3 +243,39 @@ nav {
     margin-bottom: 40px;
     width: 75%;
 }
+
+/* Estilos seccion 6 */
+.seccion-6 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5%;
+    padding: 9% 7%;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.sec6-img {
+    width: 60%;
+}
+
+.sec6-img img {
+    width: 100%;
+}
+
+.sec6-cont-text {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec6-text {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 44px;
+}
+
+.sec6-text h2 {
+    font-size: 4rem;
+}
