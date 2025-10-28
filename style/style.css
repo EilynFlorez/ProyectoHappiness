@@ -396,3 +396,28 @@ textarea {
     font-weight: 400;
     font-size: 1.43rem;
 }
+
+/* Estilos seccion 9 */
+.seccion-9 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    padding: 4% 10%;
+    background-color: rgb(245, 203, 0);
+    align-items: center;
+    gap: 40px;
+}
+.seccion-9 h2 {
+    font-size: 3.3rem;
+    line-height: 0.5;
+}
+
+.seccion-9 p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.seccion-9 img {
+    width: 100%;
+}
