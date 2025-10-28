@@ -310,3 +310,89 @@ nav {
     font-size: 5.5rem;
     line-height: 1;
 }
+
+/* Estilos seccion 8 */
+.seccion-8 {
+    width: 100%;
+    min-height: 100vh;
+    padding: 11% 9%;
+    display: flex;
+    align-items: center;
+    gap: 8%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 5.3% 4.5%;
+    padding-bottom: 4%;
+    gap: 10px;
+    width: 53%;
+    background-color: rgb(0, 0, 0);
+}
+
+form p {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-top: 18px;
+}
+label {
+    color: rgb(255, 255, 255);
+    font-family: "open sans";
+    font-size: 1.09rem;
+    font-weight: 600;
+}
+
+input {
+    background: none;
+    height: 32px;
+    width: 100%;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+textarea {
+    background: none;
+    border: 3px solid rgb(255, 255, 255);
+    width: 100%;
+    height: 170px;
+}
+.cont-inputs {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+
+.sec8-cont-text {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 47%;
+}
+
+.sec8-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.sec8-text h2 {
+    width: 70%;
+    color: rgb(245, 203, 0);
+    font-size: 4.2rem;
+    line-height: 1;
+}
+.sec8-text p {
+    font-weight: 400;
+    font-size: 1.43rem;
+}
