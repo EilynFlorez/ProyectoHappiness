@@ -649,3 +649,10 @@ footer {
         width: 80%;
     }
 }
+
+@media(max-width: 920px) {
+    /* Seccion 5 */
+    .seccion-5 {
+        min-height: 100vh;
+    }
+}
