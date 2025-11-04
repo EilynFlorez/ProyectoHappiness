@@ -35,7 +35,8 @@ a {
     text-decoration: none;
 }
 
-body {
+main{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,8 +120,54 @@ nav {
 
 /* Estilos seccion 2 */
 .seccion-2 {
-    display: none;
+    display: flex;
+    padding: 6% 5%;
+    min-height: 30vh;
+    background-color: rgb(230, 230, 230);
+    width: 82%;
+    justify-content: space-between;
+    margin: 48%;
+    position: absolute;
+    z-index: 1;
 }
+
+
+.sec2-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.sec2-text h2 {
+    width: 50%;
+    color: rgb(245, 203, 0);
+    font-size: 4.2rem;
+    line-height: 0.9;
+}
+
+.sec2-text a {
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.sec2-text p {
+    width: 60%;
+}
+
+.sec2-img {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    gap: 100px;
+}
+
+.sec2-img img {
+    width: 250px;
+    height: 250px;
+}
+
 
 /* Estilos seccion 3*/ 
 .seccion-3 {
