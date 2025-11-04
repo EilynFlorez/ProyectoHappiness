@@ -766,3 +766,112 @@ footer {
         text-align: center;
     }
 }
+
+@media(max-width: 480px) {
+    /* menu */
+    header {
+        padding: 15px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav {
+        width: 100%;
+    }
+    .menu {
+        margin-top: 20px;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    /* Seccion 1 */
+    .seccion-1 {
+        padding: 10% 5%;
+    }
+    .sec1-text {
+        width: 90%;
+    }
+    .sec1-text h1 {
+        font-size: 6rem;
+    }
+
+    .sec1-text p {
+        font-size: 1rem;
+    }
+    /* Seccion 2 */
+    .contenedor-sec2 {
+        width: 90%;
+    }
+
+    .seccion-2 {
+        padding: 60px 20px;
+    }
+
+    .sec2-text h2 {
+        font-size: 3rem;
+    }
+
+    .sec2-text p {
+        font-size: 1rem;
+    }
+
+    .sec2-img img{
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Seccion 3 */
+    .sec3-tit {
+        font-size: 3.3rem;
+    }
+    .sec3-text p {
+        font-size: 1rem;
+    }
+
+    /* Seccion 4 */
+    .sec4-text {
+        gap: 30px;
+    }
+    .sec4-text h2 {
+        font-size: 3.8rem;
+    }
+
+    .sec4-text p {
+        font-size: 1rem;
+    }
+
+    /* Seccion 7 */ 
+    .sec7-text h2 {
+        font-size: 4.3rem;
+    }
+
+    /* seccion 8 */
+    .cont-inputs {
+        flex-direction: column;
+    }
+
+    /* seccion 9 */
+    .seccion-9 {
+        padding-top: 80px;
+    }
+
+    /* Footer */
+    .foot-sec-2 h3 {
+        font-size: 1rem;
+    }
+    .footer-text h3 {
+        font-size: 1rem;
+    }
+
+    .foot-sec2-img {
+        align-items: center;
+    }
+
+    .foot-sec2-img img {
+        width: 30px;
+    }
+
+    .facebook img{
+        width: 20px;
+    }
+}
