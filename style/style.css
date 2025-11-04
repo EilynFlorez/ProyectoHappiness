@@ -9,12 +9,16 @@
     box-sizing: border-box;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: "bebas neue";
     font-weight: 500;
 }
 
-p, a, button, h3 {
+p,
+a,
+button,
+h3 {
     font-family: "open sans";
 }
 
@@ -35,7 +39,7 @@ a {
     text-decoration: none;
 }
 
-main{
+main {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -96,7 +100,7 @@ nav {
 .seccion-1 {
     display: flex;
     width: 100%;
-    min-height: 130vh;
+    min-height: 100vh;
     padding: 5.5%;
     gap: 8%;
 }
@@ -104,6 +108,7 @@ nav {
 .sec1-img {
     width: 50%;
 }
+
 .sec1-text {
     display: flex;
     flex-direction: column;
@@ -119,16 +124,31 @@ nav {
 }
 
 /* Estilos seccion 2 */
+.contenedor-sec2 {
+    width: 80%;
+    position: relative;
+    height: 300px; /* altura que ocupará el “espacio intermedio” */
+
+}
 .seccion-2 {
-    display: flex;
-    padding: 6% 5%;
-    min-height: 30vh;
-    background-color: rgb(230, 230, 230);
-    width: 82%;
-    justify-content: space-between;
-    margin: 48%;
     position: absolute;
-    z-index: 1;
+    /* Saca el contenedor del flujo normal para poder posicionarlo libremente */
+    top: 100%;
+    /* Lo coloca justo debajo del contenedor padre (al 100% de su altura) */
+    left: 50%;
+    /* Lo ubica horizontalmente en el centro del contenedor padre */
+    transform: translate(-50%, -50%);
+    /* Ajusta la posición para que el centro del bloque quede exactamente centrado */
+    background: #e6e6e6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 50vh;
+    padding: 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+
+
 }
 
 
@@ -169,7 +189,7 @@ nav {
 }
 
 
-/* Estilos seccion 3*/ 
+/* Estilos seccion 3*/
 .seccion-3 {
     display: flex;
     flex-direction: column;
@@ -193,7 +213,7 @@ nav {
 }
 
 .sec3-text {
-    display:  flex;
+    display: flex;
     flex-direction: column;
     gap: 8%;
     line-height: 1.2;
@@ -257,6 +277,7 @@ nav {
     flex-direction: column;
     margin-bottom: 35px;
 }
+
 .sec4-text h2 {
     line-height: 1;
     font-size: 5.5rem;
@@ -327,7 +348,7 @@ nav {
     font-size: 4rem;
 }
 
-/* Estilos seccion 7*/ 
+/* Estilos seccion 7*/
 .seccion-7 {
     display: flex;
     width: 100%;
@@ -358,6 +379,14 @@ nav {
     line-height: 1;
 }
 
+.sec7-img {
+    width: 59%;
+}
+
+.sec7-img img {
+    width: 100%;
+}
+
 /* Estilos seccion 8 */
 .seccion-8 {
     width: 100%;
@@ -385,6 +414,7 @@ form p {
     font-weight: 400;
     margin-top: 18px;
 }
+
 label {
     color: rgb(255, 255, 255);
     font-family: "open sans";
@@ -405,6 +435,7 @@ textarea {
     width: 100%;
     height: 170px;
 }
+
 .cont-inputs {
     display: flex;
     width: 100%;
@@ -439,6 +470,7 @@ textarea {
     font-size: 4.2rem;
     line-height: 1;
 }
+
 .sec8-text p {
     font-weight: 400;
     font-size: 1.43rem;
@@ -455,6 +487,7 @@ textarea {
     align-items: center;
     gap: 40px;
 }
+
 .seccion-9 h2 {
     font-size: 3.3rem;
     line-height: 0.5;
@@ -485,10 +518,12 @@ footer {
     flex-direction: column;
     gap: 130px;
 }
+
 .foot-sec-1 img {
     display: flex;
     width: 110px;
 }
+
 .foot-cont-text {
     display: flex;
     width: 100%;
@@ -524,4 +559,93 @@ footer {
 .foot-sec2-img {
     display: flex;
     gap: 20px;
+}
+
+/* Media Queries*/
+
+@media(max-width: 1279px) {
+
+    /* Estilos seccion 1 */
+    .seccion-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec1-img {
+        width: 70%;
+    }
+
+    .sec1-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        padding-right: 0px;
+        gap: 30px;
+    }
+
+    .sec1-img img {
+        width: 100%;
+    }
+
+    /* Estilos seccion 2 */
+    .seccion-2 {
+        align-items: center;
+    }
+
+    .sec2-text {
+        width: 60%;
+    }
+
+    .sec2-text h2 {
+        width: 100%;
+    }
+
+    .sec2-text p {
+        width: 100%;
+    }
+
+    .sec2-img {
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 50%;
+    }
+
+    .sec2-img img {
+        width: 160px;
+        height: 160px;
+    }
+
+    /* Estilo seccion 3 */
+    .seccion-3 {
+        min-height: 150vh;
+    }
+
+    .sec3-tit {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    /* Seccion 4 */
+    .seccion-4 {
+        padding: 8% 2%;
+    }
+
+    .sec4-cont-text img {
+        align-self: flex-start;
+        margin-top: 40px;
+    }
+    .sec4-text h2 {
+        font-size: 4.8rem;
+    }
+
+    .sec4-text {
+        width: 90%;
+    }
+
+    /* Seccion 5 */
+    .seccion-5 p {
+        width: 80%;
+    }
 }
